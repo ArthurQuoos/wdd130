@@ -1,5 +1,9 @@
 main {
     max-width: 840px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
 }
 
 aside {
