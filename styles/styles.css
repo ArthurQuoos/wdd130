@@ -5,10 +5,9 @@
 }
 
 main {
-    max-width: 840px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr auto;
+    /*max-width: 840px;*/
+    margin: 1rem;
+    grid-column: 2/3;
     gap: 1rem;
 }
 
@@ -21,6 +20,9 @@ aside {
     color: #333;
     text-align: center;
     position: relative;
+
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -48,6 +50,18 @@ p {
     padding: 0;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
@@ -57,9 +71,17 @@ footer {
 nav {
     background-color: #333;
     padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
 
 nav a {
+
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: white;
     padding: 0.5rem;
     display: block;
@@ -67,6 +89,7 @@ nav a {
 
 h1 {
     color: #222;
+    border-bottom: 8px;
 }
 
 /* Class Selectors */
